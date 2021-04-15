@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Question 1</title>
+<head>
+<script>
+function ConvertSectoDay(n) {
+        n = n % (24 * 3600);
+        var hour = parseInt(n / 3600);
+ 
+        n %= 3600;
+        var minutes = n / 60;
+ 
+        n %= 60;
+        var seconds = n;
+ 
+        document.write(
+                 hour + " " + "hours "
+                + minutes.toFixed() + " " + "minutes " +
+                seconds.toFixed() + " " + "seconds ");
+    }
+
+        var n = 129;
+        document.write("Number Of Seconds = "+n);
+         document.write("<br>");
+        ConvertSectoDay(n);
+</script>
+</head>
+<body>
+</body>
+</html>
